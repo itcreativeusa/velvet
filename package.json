@@ -1,5 +1,5 @@
 {
-  "name": "fashion-fusion",
+  "name": "velvet",
   "version": "1.0.0",
   "description": "Ecomerce web app for fashion",
   "main": "server/server.js",
@@ -14,7 +14,7 @@
     "node": "16.x"
   },
   "keywords": [],
-  "author": "The Drip Daddies",
+  "author": "Kateryna Stetsenko",
   "license": "ISC",
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
