@@ -54,7 +54,7 @@ Velvet is an eCommerce platform specializing in clothing, where garments are org
 
 **Browsing and Selecting:**
 
-Visit the Fashion-Fusione website.
+Visit the Velvet website.
 Browse through a variety of clothing items organized by colors.
 Choose from a list of available colors to see related clothing items.
 
@@ -89,7 +89,7 @@ This ensures efficient and precise interactions with the database.
 
 **Deployment and Hosting:**
 
-Fashion-Fusione is hosted on Heroku, providing reliable access to the platform.
+Velvet is hosted on Heroku, providing reliable access to the platform.
 Security Measures:
 
 Your sensitive API key information is protected on the server, ensuring the security of your transactions and personal data.

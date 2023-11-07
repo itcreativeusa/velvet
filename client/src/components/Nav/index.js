@@ -76,18 +76,18 @@ function Nav(props) {
 
   return (
     <header className={props.darkMode ? "dark header" : "header"}>
-      <h1 button type="button" onClick="window.location.reload()" className="Title">
+      <h1
+        button
+        type="button"
+        onClick="window.location.reload()"
+        className="Title"
+      >
         <Link className="pulse" to="/">
-          <span role="img" aria-label="dress">
-          
-          </span>
-          FASHION FUSION
+          <span role="img" aria-label="dress"></span>
+          Velvet
         </Link>
       </h1>
-      <nav className={props.darkMode ? "dark" : ""}>
-        {showNavigation()}
-      </nav>
-
+      <nav className={props.darkMode ? "dark" : ""}>{showNavigation()}</nav>
     </header>
   );
 }
