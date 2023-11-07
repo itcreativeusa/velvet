@@ -6,9 +6,8 @@ import Nav from "../components/Nav";
 
 const Home = () => {
   return (
-    
     <div>
-      <img id="mainPhoto" src="./images/fasion-fusion.png" alt="fashion-fusion"></img>
+      <img id="mainPhoto" src="./images/velvet.jpg" alt="velvet"></img>
       <CategoryMenu />
       <ProductList />
       <Cart />
