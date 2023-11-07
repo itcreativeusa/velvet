@@ -4,7 +4,6 @@ import CategoryMenu from "../components/CategoryMenu";
 import Cart from "../components/Cart";
 import Nav from "../components/Nav";
 
-// Add this line to import Bootstrap styles
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const Home = () => {
@@ -16,7 +15,9 @@ const Home = () => {
         alt="velvet"
         className="img-fluid"
       />
+      <Nav />
       <CategoryMenu />
+
       <ProductList />
       <Cart />
     </div>

@@ -21,15 +21,7 @@ function Nav(props) {
               </h2>
             )}
           </li>
-          <li>
-            <div className="toggler">
-              <p className="toggler--light">Light</p>
-              <div className="toggler--slider" onClick={props.toggleDarkMode}>
-                <div className="toggler--slider--circle"></div>
-              </div>
-              <p className="toggler--dark">Dark</p>
-            </div>
-          </li>
+
           <li className="li">
             <Link to="/orderHistory">
               <button className="btn btn-primary">View Orders</button>
@@ -47,18 +39,7 @@ function Nav(props) {
         <header>
           <nav className="navbar">
             <ul className="all-buttons">
-              <li>
-                <div className="toggler">
-                  <p className="toggler--light toggler-label">Light</p>
-                  <div
-                    className="toggler--slider"
-                    onClick={props.toggleDarkMode}
-                  >
-                    <div className="toggler--slider--circle"></div>
-                  </div>
-                  <p className="toggler--dark toggler-label">Dark</p>
-                </div>
-              </li>
+              <li></li>
               <li>
                 <Link to="/signup">
                   <button className="btn btn-success">SIGN UP</button>
