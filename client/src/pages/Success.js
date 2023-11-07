@@ -4,6 +4,8 @@ import Jumbotron from "../components/Jumbotron";
 import { ADD_ORDER } from "../utils/mutations";
 import { idbPromise } from "../utils/helpers";
 
+import "bootstrap/dist/css/bootstrap.min.css";
+
 function Success() {
   const [addOrder] = useMutation(ADD_ORDER);
 
@@ -30,7 +32,7 @@ function Success() {
   }, [addOrder]);
 
   return (
-    <div>
+    <div className="container mt-5">
       <Jumbotron>
         <h1>Success!</h1>
         <h2>Thank you for your purchase!</h2>

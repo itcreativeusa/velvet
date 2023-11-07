@@ -14,6 +14,9 @@ import { QUERY_PRODUCTS } from "../utils/queries";
 import { idbPromise } from "../utils/helpers";
 import spinner from "../assets/spinner.gif";
 
+// Add this line to import Bootstrap styles
+import "bootstrap/dist/css/bootstrap.min.css";
+
 function Detail() {
   const [state, dispatch] = useStoreContext();
   const { id } = useParams();
@@ -82,19 +85,24 @@ function Detail() {
   };
 
   return (
-    <>
+    <div className="container my-4">
       {currentProduct && cart ? (
-        <div className="container my-1">
-          <Link to="/">← Back to Products</Link>
+        <>
+          <Link to="/" className="btn btn-secondary mb-4">
+            ← Back to Products
+          </Link>
 
           <h2>{currentProduct.name}</h2>
 
           <p>{currentProduct.description}</p>
 
           <p>
-            <strong>Price:</strong>${currentProduct.price}{" "}
-            <button onClick={addToCart}>Add to Cart</button>
+            <strong>Price:</strong> ${currentProduct.price}{" "}
+            <button className="btn btn-primary" onClick={addToCart}>
+              Add to Cart
+            </button>
             <button
+              className="btn btn-danger"
               disabled={!cart.find((p) => p._id === currentProduct._id)}
               onClick={removeFromCart}
             >
@@ -105,12 +113,13 @@ function Detail() {
           <img
             src={`/images/${currentProduct.image}`}
             alt={currentProduct.name}
+            className="img-fluid"
           />
-        </div>
+        </>
       ) : null}
       {loading ? <img src={spinner} alt="loading" /> : null}
       <Cart />
-    </>
+    </div>
   );
 }
 

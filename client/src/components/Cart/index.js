@@ -13,6 +13,7 @@ import CartItem from "../CartItem";
 import Auth from "../../utils/auth";
 import { useStoreContext } from "../../utils/GlobalState";
 import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from "../../utils/actions";
+import "bootstrap/dist/css/bootstrap.min.css"; // Add this line to import Bootstrap styles
 import "./style.css";
 
 const stripePromise = loadStripe(
@@ -23,7 +24,6 @@ const Cart = () => {
   const [state, dispatch] = useStoreContext();
   const [getCheckout, { data }] = useLazyQuery(QUERY_CHECKOUT);
 
-  //checkout form
   const CheckoutForm = () => {
     const stripe = useStripe();
     const elements = useElements();
@@ -40,8 +40,6 @@ const Cart = () => {
       } else {
         processPayment(paymentMethod);
       }
-
-      console.log("button clicked");
     };
 
     async function processPayment(paymentMethod) {
@@ -125,7 +123,7 @@ const Cart = () => {
 
   return (
     <Elements stripe={stripePromise}>
-      <div className="cart">
+      <div className="cart container">
         <div className="close" onClick={toggleCart}>
           [close]
         </div>
@@ -141,7 +139,7 @@ const Cart = () => {
 
               {Auth.loggedIn() ? (
                 <div>
-                  <button className="cartBtns" onClick={submitCheckout}>
+                  <button className="btn btn-primary" onClick={submitCheckout}>
                     Checkout
                   </button>
                   <CheckoutForm />

@@ -1,9 +1,12 @@
 import React from "react";
 import Jumbotron from "../components/Jumbotron";
 
+// Add this line to import Bootstrap styles
+import "bootstrap/dist/css/bootstrap.min.css";
+
 const NoMatch = () => {
   return (
-    <div>
+    <div className="container mt-5">
       <Jumbotron>
         <h1>404 Page Not Found</h1>
         <h1>

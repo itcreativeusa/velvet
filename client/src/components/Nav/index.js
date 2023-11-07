@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { useQuery } from "@apollo/client";
 import { QUERY_USER } from "../../utils/queries";
 
+import "bootstrap/dist/css/bootstrap.min.css";
+
 function Nav(props) {
   const { data: userData } = useQuery(QUERY_USER);
   const user = userData?.user;
@@ -30,12 +32,12 @@ function Nav(props) {
           </li>
           <li className="li">
             <Link to="/orderHistory">
-              <button className="button">View Orders</button>
+              <button className="btn btn-primary">View Orders</button>
             </Link>
           </li>
           <li className="li">
             <a href="/" onClick={() => Auth.logout()}>
-              <button className="button">Logout</button>
+              <button className="btn btn-danger">Logout</button>
             </a>
           </li>
         </ul>
@@ -59,12 +61,12 @@ function Nav(props) {
               </li>
               <li>
                 <Link to="/signup">
-                  <button className="button">SIGN UP</button>
+                  <button className="btn btn-success">SIGN UP</button>
                 </Link>
               </li>
               <li>
                 <Link to="/login">
-                  <button className="button">LOG IN</button>
+                  <button className="btn btn-primary">LOG IN</button>
                 </Link>
               </li>
             </ul>
@@ -79,7 +81,7 @@ function Nav(props) {
       <h1
         button
         type="button"
-        onClick="window.location.reload()"
+        onClick={() => window.location.reload()}
         className="Title"
       >
         <Link className="pulse" to="/">

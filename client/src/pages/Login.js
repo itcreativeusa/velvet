@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 import { LOGIN } from "../utils/mutations";
 import Auth from "../utils/auth";
 
+// Add this line to import Bootstrap styles
+import "bootstrap/dist/css/bootstrap.min.css";
+
 function Login(props) {
   const [formState, setFormState] = useState({ email: "", password: "" });
   const [login, { error }] = useMutation(LOGIN);
@@ -29,8 +32,8 @@ function Login(props) {
     });
   };
 
-  
   return (
+    <div className="container mt-5">
       <div className="signupbox">
         <h2 className="formTitle">Log In</h2>
         <form onSubmit={handleFormSubmit} className="user-form">
@@ -41,6 +44,7 @@ function Login(props) {
               name="email"
               type="email"
               id="email"
+              className="form-control"
               onChange={handleChange}
             />
           </div>
@@ -51,6 +55,7 @@ function Login(props) {
               name="password"
               type="password"
               id="pwd"
+              className="form-control"
               onChange={handleChange}
             />
           </div>
@@ -62,10 +67,13 @@ function Login(props) {
             </div>
           ) : null}
           <div>
-            <button type="submit" className="submit-btn">Submit</button>
+            <button type="submit" className="btn btn-primary submit-btn">
+              Submit
+            </button>
           </div>
         </form>
       </div>
+    </div>
   );
 }
 
