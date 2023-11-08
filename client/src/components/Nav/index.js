@@ -58,12 +58,12 @@ function Nav(props) {
   }
 
   return (
-    <header className={props.darkMode ? "dark header" : "header"}>
+    <header>
       <h1
         button
         type="button"
         onClick={() => window.location.reload()}
-        className="Title"
+        className="title"
       >
         <Link to="/">
           <span role="img" aria-label="dress"></span>
