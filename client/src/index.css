@@ -44,7 +44,7 @@ a {
   color: var(--primary-color);
 }
 a:hover {
-  color: var(--secondary-color-dark);
+  color: var(--primary-color-dark);
 }
 .container {
   margin: 0 auto;
