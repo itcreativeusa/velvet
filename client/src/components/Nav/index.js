@@ -36,7 +36,7 @@ function Nav(props) {
       );
     } else {
       return (
-        <header className="flex-row ">
+        <header className="flex-row px-1">
           <nav>
             <ul className="flex-row">
               <li className="mx-1">
