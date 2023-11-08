@@ -27,3 +27,6 @@ body {
   margin: 1rem 0;
   background-color: var(--primary-color);
 }
+li {
+  list-style: none;
+}
