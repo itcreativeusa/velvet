@@ -20,3 +20,10 @@ body {
   padding: 0;
   color: var(--primary-color-dark);
 }
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+  background-color: var(--primary-color);
+}
