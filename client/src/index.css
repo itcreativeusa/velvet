@@ -5,7 +5,9 @@
   --secondary-color: #e09f3e;
   --secondary-color-dark: #335c67;
 }
-
+* {
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   padding: 0;
@@ -32,6 +34,7 @@ header {
   padding: 0;
   color: var(--primary-color-dark);
 }
+
 .btn-group {
   display: flex;
   justify-content: space-between;
@@ -58,9 +61,28 @@ a:hover {
   width: 100%;
   height: auto;
 }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.product-item {
+  flex: 0 0 30%;
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.product-img {
+  width: 180px
+  height:200px;
+}
 .card {
   margin: 1rem;
   padding: 1rem;
+  height: ;
   border: 1px solid var(--primary-color);
   border-radius: 0.5rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
