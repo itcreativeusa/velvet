@@ -21,6 +21,7 @@ header {
 header h1 a {
   color: var(--primary-color);
   font-family: "Agbalumo";
+  text-transform: capitalize;
 }
 .flex-row {
   display: flex;

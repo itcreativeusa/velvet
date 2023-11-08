@@ -59,7 +59,7 @@ function Nav(props) {
   return (
     <header>
       <h1>
-        <Link to="/">Velvet</Link>
+        <Link to="/">Velvet fashion store</Link>
       </h1>
       <nav>{showNavigation()}</nav>
     </header>
