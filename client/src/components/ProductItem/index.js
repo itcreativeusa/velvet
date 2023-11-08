@@ -37,13 +37,9 @@ function ProductItem(item) {
   };
 
   return (
-    <div className="card productItem">
+    <div className="card">
       <Link to={`/products/${_id}`}>
-        <img
-          className="card-img-top productImg"
-          alt={name}
-          src={`/images/${image}`}
-        />
+        <img className="card-img-top" alt={name} src={`/images/${image}`} />
         <div className="card-body">
           <p className="card-text">{name}</p>
         </div>

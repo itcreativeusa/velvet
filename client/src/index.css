@@ -16,17 +16,9 @@ body {
   color: var(--primary-color);
 }
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
   background-color: black;
 }
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+
 .title {
   font-size: 2rem;
   font-weight: 500;
@@ -67,22 +59,12 @@ a:hover {
   justify-content: space-between;
   align-items: center;
 }
-.product-item {
-  flex: 0 0 30%;
-  margin: 1rem 0;
-  padding: 1rem;
-  border: 1px solid var(--primary-color);
-  border-radius: 0.5rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-.product-img {
-  width: 180px;
-  height: 200px;
-}
+
 .card {
   margin: 1rem;
   padding: 1rem;
-  height: ;
+  width: 25%;
+  text-align: center;
   border: 1px solid var(--primary-color);
   border-radius: 0.5rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);

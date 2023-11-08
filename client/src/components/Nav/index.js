@@ -36,15 +36,15 @@ function Nav(props) {
       );
     } else {
       return (
-        <header>
-          <nav className="navbar">
-            <ul className="all-buttons">
-              <li>
+        <header className="flex-row ">
+          <nav>
+            <ul className="flex-row">
+              <li className="mx-1">
                 <Link to="/signup">
                   <button className="btn btn-success">SIGN UP</button>
                 </Link>
               </li>
-              <li>
+              <li className="mx-1">
                 <Link to="/login">
                   <button className="btn btn-primary">LOG IN</button>
                 </Link>
