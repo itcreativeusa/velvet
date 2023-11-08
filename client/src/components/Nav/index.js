@@ -59,12 +59,7 @@ function Nav(props) {
 
   return (
     <header>
-      <h1
-        button
-        type="button"
-        onClick={() => window.location.reload()}
-        className="title"
-      >
+      <h1 button type="button" onClick={() => window.location.reload()}>
         <Link to="/">Velvet</Link>
       </h1>
       <nav>{showNavigation()}</nav>
