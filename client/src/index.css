@@ -51,11 +51,11 @@ a:hover {
   padding: 0 1rem;
 }
 .full-width-image-bg {
-  background-image: "/images/velvet.jpg";
+  background-image: url("./images/velvet.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
