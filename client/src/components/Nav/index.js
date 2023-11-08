@@ -65,12 +65,12 @@ function Nav(props) {
         onClick={() => window.location.reload()}
         className="Title"
       >
-        <Link className="pulse" to="/">
+        <Link to="/">
           <span role="img" aria-label="dress"></span>
           Velvet
         </Link>
       </h1>
-      <nav className={props.darkMode ? "dark" : ""}>{showNavigation()}</nav>
+      <nav>{showNavigation()}</nav>
     </header>
   );
 }

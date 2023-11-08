@@ -10,6 +10,13 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
-  background-color: var(--primary-color);
+  background-color: #fff;
+  color: var(--primary-color-dark);
+}
+.title {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
   color: var(--primary-color-dark);
 }
