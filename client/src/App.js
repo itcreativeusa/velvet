@@ -17,8 +17,7 @@ import Nav from "./components/Nav";
 import { StoreProvider } from "./utils/GlobalState";
 import Success from "./pages/Success";
 import OrderHistory from "./pages/OrderHistory";
-import Footer from "./components/Footer/Footer"
-
+import Footer from "./components/Footer/Footer";
 
 const httpLink = createHttpLink({
   uri: "/graphql",
@@ -41,16 +40,16 @@ const client = new ApolloClient({
 
 function App() {
   const [darkMode, setDarkMode] = React.useState(false);
-    
+
   React.useEffect(() => {
-      if (darkMode) {
-        document.body.classList.add("dark");
-      } else {
-        document.body.classList.remove("dark");
-      }
-    }, [darkMode]);
-  
-    function toggle() {
+    if (darkMode) {
+      document.body.classList.add("dark");
+    } else {
+      document.body.classList.remove("dark");
+    }
+  }, [darkMode]);
+
+  function toggle() {
     setDarkMode((prevDarkMode) => !prevDarkMode);
   }
 
@@ -59,8 +58,8 @@ function App() {
       <Router>
         <div>
           <StoreProvider>
-            <Nav darkMode={darkMode} toggleDarkMode={toggle} />
-            <Routes darkMode={darkMode}>
+            <Nav />
+            <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<Signup />} />
@@ -69,7 +68,7 @@ function App() {
               <Route path="/products/:id" element={<Detail />} />
               <Route path="*" element={<NoMatch />} />
             </Routes>
-            <Footer darkMode={darkMode} />
+            <Footer />
           </StoreProvider>
         </div>
       </Router>
