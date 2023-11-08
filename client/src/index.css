@@ -18,6 +18,10 @@ body {
 header {
   background-color: black;
 }
+header a {
+  color: var(--primary-color);
+  font-family: "Agbalumo";
+}
 
 .btn-group {
   display: flex;
