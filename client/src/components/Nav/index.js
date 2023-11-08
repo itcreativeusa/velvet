@@ -39,7 +39,6 @@ function Nav(props) {
         <header>
           <nav className="navbar">
             <ul className="all-buttons">
-              <li></li>
               <li>
                 <Link to="/signup">
                   <button className="btn btn-success">SIGN UP</button>
