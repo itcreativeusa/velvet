@@ -30,3 +30,15 @@ body {
 li {
   list-style: none;
 }
+a {
+  text-decoration: none;
+  color: var(--primary-color-dark);
+}
+a:hover {
+  color: var(--secondary-color-dark);
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
