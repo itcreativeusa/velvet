@@ -5,6 +5,7 @@ import { useQuery } from "@apollo/client";
 import { QUERY_USER } from "../../utils/queries";
 
 import "bootstrap/dist/css/bootstrap.min.css";
+import "https://fonts.googleapis.com/css2?family=Agbalumo&family=Montserrat:wght@300;700;800&display=swap";
 
 function Nav(props) {
   const { data: userData } = useQuery(QUERY_USER);
