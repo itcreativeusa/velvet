@@ -18,7 +18,7 @@ body {
 header {
   background-color: black;
 }
-header a {
+header h1 a {
   color: var(--primary-color);
   font-family: "Agbalumo";
 }
