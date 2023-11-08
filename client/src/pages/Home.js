@@ -7,11 +7,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const Home = () => {
   return (
-    <div className="container mt-5">
-      <img src="./images/velvet.jpg" alt="velvet" className="img-fluid" />
-
+    <div className="container">
+      <div className="container home"></div>
       <CategoryMenu />
-
       <ProductList />
       <Cart />
     </div>

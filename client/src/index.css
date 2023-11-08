@@ -41,9 +41,18 @@ a:hover {
   color: var(--secondary-color-dark);
 }
 .container {
-  max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
+}
+.home {
+  background-image: "/images/velvet.jpg";
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .img-fluid {
   width: 100%;
