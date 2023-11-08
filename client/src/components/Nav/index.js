@@ -64,10 +64,7 @@ function Nav(props) {
         onClick={() => window.location.reload()}
         className="title"
       >
-        <Link to="/">
-          <span role="img" aria-label="dress"></span>
-          Velvet
-        </Link>
+        <Link to="/">Velvet</Link>
       </h1>
       <nav>{showNavigation()}</nav>
     </header>
