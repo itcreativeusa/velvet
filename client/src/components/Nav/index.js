@@ -57,7 +57,7 @@ function Nav(props) {
   }
 
   return (
-    <header>
+    <header className="flex-row px-1">
       <h1>
         <Link to="/">Velvet fashion store</Link>
       </h1>
