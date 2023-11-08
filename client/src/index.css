@@ -13,6 +13,13 @@ body {
   background-color: #fff;
   color: var(--primary-color-dark);
 }
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--secondary-color);
+}
 .title {
   font-size: 2rem;
   font-weight: 500;
@@ -32,7 +39,7 @@ li {
 }
 a {
   text-decoration: none;
-  color: var(--primary-color-dark);
+  color: var(--primary-color);
 }
 a:hover {
   color: var(--secondary-color-dark);
@@ -41,4 +48,11 @@ a:hover {
 .img-fluid {
   width: 100%;
   height: auto;
+}
+.card {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
