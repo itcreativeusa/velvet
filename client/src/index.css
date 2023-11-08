@@ -20,7 +20,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: var(--secondary-color);
+  background-color: black;
 }
 .navbar {
   display: flex;
@@ -76,8 +76,8 @@ a:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 .product-img {
-  width: 180px
-  height:200px;
+  width: 180px;
+  height: 200px;
 }
 .card {
   margin: 1rem;
