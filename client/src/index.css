@@ -22,6 +22,12 @@ header h1 a {
   color: var(--primary-color);
   font-family: "Agbalumo";
 }
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
 .btn-group {
   display: flex;
