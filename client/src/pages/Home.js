@@ -7,11 +7,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const Home = () => {
   return (
-    <div className="container">
-      <div className="container home"></div>
-      <CategoryMenu />
-      <ProductList />
-      <Cart />
+    <div>
+      <div className="full-width-image-bg"></div>
+      <div className="container home">
+        <CategoryMenu />
+        <ProductList />
+        <Cart />
+      </div>
     </div>
   );
 };

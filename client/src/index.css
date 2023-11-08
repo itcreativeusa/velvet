@@ -44,7 +44,7 @@ a:hover {
   margin: 0 auto;
   padding: 0 1rem;
 }
-.home {
+.full-width-image-bg {
   background-image: "/images/velvet.jpg";
   background-size: cover;
   background-position: center;
