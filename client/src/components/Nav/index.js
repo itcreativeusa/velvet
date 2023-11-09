@@ -37,9 +37,7 @@ function Nav(props) {
       return (
         <div className="flex-row">
           <div className="logo">
-            <h1>
-              <Link to="/">Velvet </Link>
-            </h1>
+            <Link to="/">Velvet </Link>
           </div>
           <div className="auth">
             <ul>

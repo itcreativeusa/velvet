@@ -16,6 +16,14 @@
   margin-right: auto; /* Add this line */
   margin-top: 15px;
 }
+.logo a {
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.logo a:hover {
+  text-decoration: underline;
+}
 
 .auth {
   float: right;
@@ -34,12 +42,7 @@ body {
 .container {
   text-align: center;
 }
-header h1 a {
-  color: var(--primary-color);
 
-  font-weight: 500;
-  font-size: 1.5rem;
-}
 .flex-row {
   display: flex;
   flex-wrap: wrap;
@@ -116,9 +119,7 @@ a:hover {
   color: var(--primary-color);
   text-transform: uppercase;
 }
-.mx-1 a {
-  padding: 1% 0;
-}
+
 .btn:hover {
   text-decoration: underline;
   background-color: transparent;
