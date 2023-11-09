@@ -42,8 +42,8 @@ function Nav(props) {
             </h1>
           </div>
           <div className="auth">
-            <ul className="flex-row">
-              <li className="mx-1">
+            <ul>
+              <li>
                 <Link to="/signup">
                   <button className="btn btn-success">SIGN UP</button>
                 </Link>
