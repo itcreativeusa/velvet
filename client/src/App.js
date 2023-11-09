@@ -49,10 +49,6 @@ function App() {
     }
   }, [darkMode]);
 
-  function toggle() {
-    setDarkMode((prevDarkMode) => !prevDarkMode);
-  }
-
   return (
     <ApolloProvider client={client}>
       <Router>

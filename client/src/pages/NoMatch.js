@@ -1,9 +1,6 @@
 import React from "react";
 import Jumbotron from "../components/Jumbotron";
 
-// Add this line to import Bootstrap styles
-import "bootstrap/dist/css/bootstrap.min.css";
-
 const NoMatch = () => {
   return (
     <div className="container mt-5">

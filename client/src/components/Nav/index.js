@@ -1,10 +1,9 @@
+/* Component */
 import React from "react";
 import Auth from "../../utils/auth";
 import { Link } from "react-router-dom";
 import { useQuery } from "@apollo/client";
 import { QUERY_USER } from "../../utils/queries";
-
-import "bootstrap/dist/css/bootstrap.min.css";
 
 function Nav(props) {
   const { data: userData } = useQuery(QUERY_USER);
@@ -36,8 +35,13 @@ function Nav(props) {
       );
     } else {
       return (
-        <header className="flex-row px-1">
-          <nav>
+        <div className="flex-row">
+          <div className="logo">
+            <h1>
+              <Link to="/">Velvet </Link>
+            </h1>
+          </div>
+          <div className="auth">
             <ul className="flex-row">
               <li className="mx-1">
                 <Link to="/signup">
@@ -50,17 +54,14 @@ function Nav(props) {
                 </Link>
               </li>
             </ul>
-          </nav>
-        </header>
+          </div>
+        </div>
       );
     }
   }
 
   return (
-    <header className="flex-row px-1">
-      <h1>
-        <Link to="/">Velvet fashion store</Link>
-      </h1>
+    <header>
       <nav>{showNavigation()}</nav>
     </header>
   );

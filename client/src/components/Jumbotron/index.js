@@ -1,8 +1,5 @@
 import React from "react";
 
-// Add this line to import Bootstrap styles
-import "bootstrap/dist/css/bootstrap.min.css";
-
 function Jumbotron({ children }) {
   return (
     <div

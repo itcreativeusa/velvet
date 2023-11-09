@@ -8,9 +8,6 @@ import {
 import { QUERY_CATEGORIES } from "../../utils/queries";
 import { idbPromise } from "../../utils/helpers";
 
-// Add this line to import Bootstrap styles
-import "bootstrap/dist/css/bootstrap.min.css";
-
 function CategoryMenu() {
   const [state, dispatch] = useStoreContext();
 

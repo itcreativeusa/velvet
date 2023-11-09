@@ -13,7 +13,6 @@ import CartItem from "../CartItem";
 import Auth from "../../utils/auth";
 import { useStoreContext } from "../../utils/GlobalState";
 import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from "../../utils/actions";
-import "bootstrap/dist/css/bootstrap.min.css"; // Add this line to import Bootstrap styles
 import "./style.css";
 
 const stripePromise = loadStripe(
@@ -115,7 +114,11 @@ const Cart = () => {
     return (
       <div className="cart-closed" onClick={toggleCart}>
         <span role="img" aria-label="trash">
-          <img className="cartLogo" src="/cart.ico" alt="cart image" />
+          <img
+            className="cartLogo"
+            src="/icons8-cart-50.png"
+            alt="cart image"
+          />
         </span>
       </div>
     );

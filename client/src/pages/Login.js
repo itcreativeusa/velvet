@@ -4,9 +4,6 @@ import { Link } from "react-router-dom";
 import { LOGIN } from "../utils/mutations";
 import Auth from "../utils/auth";
 
-// Add this line to import Bootstrap styles
-import "bootstrap/dist/css/bootstrap.min.css";
-
 function Login(props) {
   const [formState, setFormState] = useState({ email: "", password: "" });
   const [login, { error }] = useMutation(LOGIN);

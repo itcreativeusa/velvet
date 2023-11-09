@@ -4,9 +4,6 @@ import { useMutation } from "@apollo/client";
 import Auth from "../utils/auth";
 import { ADD_USER } from "../utils/mutations";
 
-// Add this line to import Bootstrap styles
-import "bootstrap/dist/css/bootstrap.min.css";
-
 function Signup(props) {
   const [formState, setFormState] = useState({
     email: "",

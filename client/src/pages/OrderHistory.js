@@ -4,9 +4,6 @@ import { Link } from "react-router-dom";
 import { useQuery } from "@apollo/client";
 import { QUERY_USER } from "../utils/queries";
 
-// Add this line to import Bootstrap styles
-import "bootstrap/dist/css/bootstrap.min.css";
-
 function OrderHistory() {
   const { data } = useQuery(QUERY_USER);
   let user;

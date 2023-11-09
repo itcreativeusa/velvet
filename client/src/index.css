@@ -1,56 +1,76 @@
 :root {
-  --primary-color: #9e2a2b;
-  --primary-color-light: #fff3b0;
-  --primary-color-dark: #540b0e;
-  --secondary-color: #e09f3e;
-  --secondary-color-dark: #335c67;
+  --primary-color: #000;
+  --primary-color-light: #767676;
+  --secondary-color: #e5e7eb;
 }
 * {
   box-sizing: border-box;
 }
+.row > * {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.logo {
+  float: left;
+  margin-right: auto; /* Add this line */
+}
+
+.auth {
+  float: right;
+  margin-left: auto; /* Add this line */
+}
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
   background-color: #fff;
   color: var(--primary-color);
+  text-transform: uppercase;
 }
-header {
-  background-color: black;
-}
+
 header h1 a {
   color: var(--primary-color);
-  font-family: "Agbalumo";
-  text-transform: capitalize;
+
+  font-weight: 500;
+  font-size: 1.5rem;
 }
 .flex-row {
   display: flex;
   flex-wrap: wrap;
+  margin: 0 15px;
 }
 
-.btn-group {
+.btn-group .btn {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: var(--primary-color);
   margin: 1rem 0;
-  background-color: var(--primary-color);
+}
+.btn-group .btn:hover {
+  text-decoration: underline;
+}
+
+.categoryBtn {
+  color: var(--secondary-color);
 }
 li {
   list-style: none;
 }
 a {
   text-decoration: none;
-  color: var(--primary-color);
+  color: white;
 }
 a:hover {
-  color: var(--primary-color-dark);
+  text-decoration: underline;
 }
 .container {
   margin: 0 auto;
   padding: 0 1rem;
 }
 .full-width-image-bg {
-  background-image: url("./images/velvet.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -59,14 +79,10 @@ a:hover {
   justify-content: center;
   align-items: center;
 }
+
 .img-fluid {
   width: 100%;
   height: auto;
-}
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .card {
@@ -74,9 +90,33 @@ a:hover {
   text-align: center;
   margin: 5px;
 }
+.card-body {
+  color: var(--primary-color);
+  padding-bottom: 5%;
+  font-weight: 500;
+}
+.card-body:hover {
+  text-decoration: underline;
+}
 .card-img-top {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
+  padding: 5%;
+  object-fit: contain;
   overflow: hidden;
+  height: 300px;
+}
+
+.btn {
+  border: transparent;
+  background: none;
+  font-weight: 500;
+  color: var(--primary-color);
+  text-transform: uppercase;
+}
+.mx-1 a {
+  padding: 1% 0;
+}
+.btn:hover {
+  text-decoration: underline;
+  background-color: transparent;
+  color: var(--primary-color);
 }
