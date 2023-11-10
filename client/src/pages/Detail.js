@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useQuery } from "@apollo/client";
-
 import Cart from "../components/Cart";
 import { useStoreContext } from "../utils/GlobalState";
 import {
@@ -85,10 +84,9 @@ function Detail() {
     <div className="container my-4">
       {currentProduct && cart ? (
         <>
-          <Link to="/" className="btn btn-secondary mb-4">
+          <Link to="/" className="btn btn-secondary">
             ← Back to Products
           </Link>
-
           <h2>{currentProduct.name}</h2>
 
           <p>{currentProduct.description}</p>

@@ -15,9 +15,9 @@ function Nav(props) {
         <ul className="navbar">
           <li className="li">
             {user && (
-              <h2 id="welcomeMessage">
+              <Link className="logo" id="welcomeMessage" to="/">
                 Welcome, {user.firstName} {user.lastName}
-              </h2>
+              </Link>
             )}
           </li>
 
@@ -36,11 +36,12 @@ function Nav(props) {
     } else {
       return (
         <div className="flex-row">
-          <div className="logo">
-            <Link to="/">Velvet </Link>
-          </div>
+          <Link className="logo" to="/">
+            Velvet
+          </Link>
+
           <div className="auth">
-            <ul>
+            <ul className="flex-row">
               <li>
                 <Link to="/signup">
                   <button className="btn btn-success">SIGN UP</button>
@@ -59,7 +60,7 @@ function Nav(props) {
   }
 
   return (
-    <header>
+    <header className="container">
       <nav>{showNavigation()}</nav>
     </header>
   );

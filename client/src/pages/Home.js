@@ -5,13 +5,13 @@ import Cart from "../components/Cart";
 
 const Home = () => {
   return (
-    <div>
+    <div className="main-content">
       {/* Hero Image (Jumbotron) */}
       <div className="jumbotron jumbotron-fluid">
         <div className="container position-relative">
           {/* Adding the Image */}
           <img
-            src="/velvet.png" // Adjust the path based on your project structure
+            src="/velvet5.png" // Adjust the path based on your project structure
             alt="Velvet Image"
             className="img-fluid"
           />

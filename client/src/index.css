@@ -15,19 +15,18 @@
   float: left;
   margin-right: auto; /* Add this line */
   margin-top: 15px;
-}
-.logo a {
   color: var(--primary-color);
   font-weight: 500;
   font-size: 1.5rem;
 }
-.logo a:hover {
+
+.logo :hover {
   text-decoration: underline;
 }
 
 .auth {
   float: right;
-  margin: 15px 50px 0 0;
+  margin-top: 15px;
 }
 body {
   margin: 0;
@@ -42,13 +41,23 @@ body {
 .container {
   text-align: center;
 }
-
+header {
+  position: fixed;
+  z-index: 1;
+}
+h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 1rem 0;
+}
 .flex-row {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   margin: 0 15px;
 }
-
+.main-content {
+  padding-top: 100px;
+}
 .btn-group .btn {
   display: flex;
   justify-content: space-between;
@@ -88,7 +97,7 @@ a:hover {
 }
 
 .img-fluid {
-  width: 100%;
+  width: 50%;
   height: auto;
 }
 
@@ -102,9 +111,18 @@ a:hover {
   padding-bottom: 5%;
   font-weight: 500;
 }
-.card-body:hover {
+.card-footer {
+  background-color: var(--secondary-color);
+  border: none;
+}
+.card-text {
+  font-weight: 300;
   text-decoration: underline;
 }
+.card-text:hover {
+  font-weight: 500;
+}
+
 .card-img-top {
   padding: 5%;
   object-fit: contain;
@@ -127,7 +145,7 @@ a:hover {
 }
 footer {
   background-color: var(--primary-color);
-  color: var(--secondary-color);
+  color: white;
   padding: 1rem;
   text-align: center;
   font-weight: 500;

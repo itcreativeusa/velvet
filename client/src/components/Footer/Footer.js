@@ -9,7 +9,7 @@ export default function Footer(props) {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <i className="bi bi-github"></i>Kateryna Stetsenko
+        <i className="bi bi-github"></i> Kateryna Stetsenko
       </a>
     </footer>
   );

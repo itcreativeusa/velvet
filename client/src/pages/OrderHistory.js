@@ -13,7 +13,13 @@ function OrderHistory() {
   }
 
   return (
-    <div className="container my-4">
+    <div className="main-content">
+      <img
+        src="/orders1.png" // Adjust the path based on your project structure
+        alt="Orders Image"
+        className="img-fluid mb-4"
+      />
+
       <Link to="/" className="btn btn-secondary mb-4">
         ← Back to Products
       </Link>
