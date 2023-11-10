@@ -120,13 +120,6 @@ a:hover {
   font-weight: 500;
 }
 
-.card-img-top {
-  padding: 5%;
-  object-fit: contain;
-  overflow: hidden;
-  height: 300px;
-}
-
 .btn {
   border: transparent;
   background: none;
