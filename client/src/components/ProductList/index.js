@@ -44,7 +44,7 @@ function ProductList() {
   }
 
   return (
-    <div className="container my-4">
+    <div className="container-fluid">
       <h2>Our Products:</h2>
       {state.products.length ? (
         <div className="row">

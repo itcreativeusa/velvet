@@ -15,7 +15,7 @@ function Nav(props) {
         <ul className="navbar">
           <li className="li">
             {user && (
-              <Link className="logo" id="welcomeMessage" to="/">
+              <Link className="name" id="welcomeMessage" to="/">
                 Welcome, {user.firstName} {user.lastName}
               </Link>
             )}
@@ -35,33 +35,33 @@ function Nav(props) {
       );
     } else {
       return (
-        <div className="flex-row">
-          <Link className="logo" to="/">
-            Velvet
-          </Link>
-
-          <div className="auth">
-            <ul className="flex-row">
-              <li>
-                <Link to="/signup">
-                  <button className="btn btn-success">SIGN UP</button>
-                </Link>
-              </li>
-              <li className="mx-1">
-                <Link to="/login">
-                  <button className="btn btn-primary">LOG IN</button>
-                </Link>
-              </li>
-            </ul>
-          </div>
+        <div className="auth">
+          <ul className="flex-row">
+            <li>
+              <Link to="/signup">
+                <button className="btn btn-success">SIGN UP</button>
+              </Link>
+            </li>
+            <li className="mx-1">
+              <Link to="/login">
+                <button className="btn btn-primary">LOG IN</button>
+              </Link>
+            </li>
+          </ul>
         </div>
       );
     }
   }
 
   return (
-    <header className="container">
-      <nav>{showNavigation()}</nav>
+    <header className="container-fluid navigation">
+      <div className="flex-row">
+        <Link className="logo" to="/">
+          Velvet
+        </Link>
+
+        <nav>{showNavigation()}</nav>
+      </div>
     </header>
   );
 }

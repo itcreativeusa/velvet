@@ -81,10 +81,10 @@ function Detail() {
   };
 
   return (
-    <div className="container">
+    <div className="container-fluid detail">
       {currentProduct && cart ? (
         <>
-          <Link to="/" className="btn btn-secondary">
+          <Link to="/" className="btn ">
             ← Back to Products
           </Link>
           <h2>{currentProduct.name}</h2>
@@ -93,7 +93,7 @@ function Detail() {
 
           <p>
             <strong>Price:</strong> ${currentProduct.price}{" "}
-            <button className="btn btn-primary" onClick={addToCart}>
+            <button className="btn " onClick={addToCart}>
               Add to Cart
             </button>
             <button
@@ -108,7 +108,7 @@ function Detail() {
           <img
             src={`/images/${currentProduct.image}`}
             alt={currentProduct.name}
-            className="img-fluid"
+            className="img-fluid img-detail"
           />
         </>
       ) : null}

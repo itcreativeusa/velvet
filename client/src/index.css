@@ -13,15 +13,19 @@
 
 .logo {
   float: left;
-  margin-right: auto; /* Add this line */
-  margin-top: 15px;
+  margin-right: auto;
   color: var(--primary-color);
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .logo :hover {
   text-decoration: underline;
+}
+.name {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--primary-color);
 }
 
 .auth {
@@ -55,9 +59,7 @@ h2 {
   align-items: center;
   margin: 0 15px;
 }
-.main-content {
-  padding-top: 100px;
-}
+
 .btn-group .btn {
   display: flex;
   justify-content: space-between;
@@ -148,4 +150,26 @@ footer {
 .img-fluid {
   width: 100%;
   height: auto;
+}
+.img-detail {
+  width: 50%;
+  height: auto;
+  object-fit: contain;
+}
+.container-fluid {
+  text-align: center;
+}
+.detail {
+  padding-top: px;
+  position: relative;
+}
+.navigation {
+  margin-top: 0;
+  position: relative;
+}
+.navbar {
+  margin: 0 auto;
+  font-weight: 300;
+  font-size: 1rem;
+  margin-right: 50px;
 }

@@ -24,12 +24,6 @@
   width: 40px;
 }
 
-.trash-icon {
-  height: 40px;
-  width: 20px;
-  margin-bottom: -10px;
-}
-
 .cart .close {
   position: absolute;
   top: 0.5rem;
@@ -44,9 +38,9 @@
 
 .cart-closed {
   position: fixed;
-  top: 2%;
+  top: 0;
   right: 1%;
-  font-size: 2rem;
+
   cursor: pointer;
   background-color: transparent;
   border-radius: 50%;
