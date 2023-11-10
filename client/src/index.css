@@ -96,11 +96,6 @@ a:hover {
   align-items: center;
 }
 
-.img-fluid {
-  width: 50%;
-  height: auto;
-}
-
 .card {
   width: 30%;
   text-align: center;
@@ -149,4 +144,8 @@ footer {
   padding: 1rem;
   text-align: center;
   font-weight: 500;
+}
+.img-fluid {
+  width: 100%;
+  height: auto;
 }

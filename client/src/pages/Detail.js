@@ -81,7 +81,7 @@ function Detail() {
   };
 
   return (
-    <div className="container my-4">
+    <div className="container">
       {currentProduct && cart ? (
         <>
           <Link to="/" className="btn btn-secondary">
