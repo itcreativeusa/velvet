@@ -1,4 +1,7 @@
 {
-  "presets": ["react-app"],
-  "plugins": ["@babel/plugin-proposal-private-property-in-object"]
+  "presets": ["react-app", "@babel/preset-env", "@babel/preset-react"],
+  "plugins": [
+    "@babel/plugin-transform-runtime",
+    "@babel/plugin-proposal-private-property-in-object"
+  ]
 }

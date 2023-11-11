@@ -35,7 +35,7 @@ function Nav(props) {
       );
     } else {
       return (
-        <div className="auth">
+        <div>
           <ul className="flex-row">
             <li>
               <Link to="/signup">
