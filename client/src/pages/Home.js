@@ -5,7 +5,7 @@ import Cart from "../components/Cart";
 
 const Home = () => {
   return (
-    <div className="main-content">
+    <div className="container-fluid">
       {/* Hero Image (Jumbotron) */}
       <div className="jumbotron jumbotron-fluid">
         {/* Make Image wider */}
@@ -26,7 +26,7 @@ const Home = () => {
       </div>
 
       {/* Main Content */}
-      <div className="container home">
+      <div className="container-fluid">
         <CategoryMenu />
         <ProductList />
         <Cart />

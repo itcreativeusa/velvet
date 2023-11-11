@@ -87,29 +87,39 @@ function Detail() {
           <Link to="/" className="btn ">
             ← Back to Products
           </Link>
-          <h2>{currentProduct.name}</h2>
 
-          <p>{currentProduct.description}</p>
+          <div className="row ">
+            {/* Left Column */}
+            <div className="col-md-6 product-image">
+              <img
+                src={`/images/${currentProduct.image}`}
+                alt={currentProduct.name}
+                className="img-fluid img-detail"
+              />
+            </div>
 
-          <p>
-            <strong>Price:</strong> ${currentProduct.price}{" "}
-            <button className="btn " onClick={addToCart}>
-              Add to Cart
-            </button>
-            <button
-              className="btn btn-danger"
-              disabled={!cart.find((p) => p._id === currentProduct._id)}
-              onClick={removeFromCart}
-            >
-              Remove from Cart
-            </button>
-          </p>
+            {/* Right Column */}
+            <div className="col-md-6 product-info">
+              <h2>{currentProduct.name}</h2>
+              <div>
+                <p>{currentProduct.description}</p>
 
-          <img
-            src={`/images/${currentProduct.image}`}
-            alt={currentProduct.name}
-            className="img-fluid img-detail"
-          />
+                <p>
+                  <strong>Price:</strong> ${currentProduct.price}{" "}
+                  <button className="btn " onClick={addToCart}>
+                    Add to Cart
+                  </button>
+                  <button
+                    className="btn btn-danger"
+                    disabled={!cart.find((p) => p._id === currentProduct._id)}
+                    onClick={removeFromCart}
+                  >
+                    Remove from Cart
+                  </button>
+                </p>
+              </div>
+            </div>
+          </div>
         </>
       ) : null}
       {loading ? <img src={spinner} alt="loading" /> : null}

@@ -45,9 +45,11 @@ function ProductList() {
 
   return (
     <div className="container-fluid">
-      <h2>Our Products:</h2>
+      <h2 className="text-center">Our Products:</h2>
       {state.products.length ? (
-        <div className="row">
+        <div className="row justify-content-center">
+          {" "}
+          {/* Updated: justify-content-center */}
           {filterProducts().map((product) => (
             <ProductItem
               key={product._id}
@@ -61,7 +63,7 @@ function ProductList() {
           ))}
         </div>
       ) : (
-        <h3>You haven't added any products yet!</h3>
+        <h3 className="text-center">You haven't added any products yet!</h3>
       )}
       {loading ? <img src={spinner} alt="loading" /> : null}
     </div>
