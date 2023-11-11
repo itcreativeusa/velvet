@@ -102,10 +102,10 @@ Your sensitive API key information is protected on the server, ensuring the secu
 ## Screenshots
 
 Screenshots located in `img/` folder
-![main page](img/Screenshot.png)
-![categories](img/Screenshot1.png)
-![product](img/Screenshot3.png)
-![login](img/Screenshot4.png)
+![main page](img/screenshot.png)
+![categories](img/screenshot1.png)
+![product](img/screenshot3.png)
+![login](img/screenshot4.png)
 
 ## Credits
 
