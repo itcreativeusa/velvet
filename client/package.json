@@ -1,8 +1,13 @@
 {
-  "name": "mern-client",
+  "name": "velvet",
   "version": "0.1.0",
   "private": true,
+  "author": "Kateryna Stesenko",
   "proxy": "http://localhost:3001/",
+  "engines": {
+    "node": "20.9.0",
+    "npm": "10.1.0"
+  },
   "dependencies": {
     "@apollo/client": "^3.5.8",
     "@stripe/react-stripe-js": "^2.1.2",
