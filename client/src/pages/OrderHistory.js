@@ -14,7 +14,11 @@ function OrderHistory() {
 
   return (
     <div className="container-fluid">
-      <img src="/orders1.png" alt="Orders Image" className="img-fluid mb-4" />
+      <img
+        src="/order-history.png"
+        alt="Orders Image"
+        className="img-fluid mb-4 order-history-image"
+      />
 
       <Link to="/" className="btn">
         ← Back to Products
