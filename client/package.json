@@ -4,9 +4,12 @@
   "private": true,
   "author": "Kateryna Stesenko",
   "proxy": "http://localhost:3001/",
-  "engines": {
-    "node": "20.9.0",
-    "npm": "10.1.0"
+  "scripts": {
+    "start": "node server --ignore client",
+    "develop": "concurrently \"cd server && npm run start\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "seed": "cd server && npm run seed",
+    "build": "cd client && npm run build"
   },
   "dependencies": {
     "@apollo/client": "^3.5.8",
@@ -22,12 +25,9 @@
     "react-router-dom": "^6.2.1",
     "react-scripts": "4.0.2"
   },
-  "scripts": {
-    "start": "node server --ignore client",
-    "develop": "concurrently \"cd server && npm run start\" \"cd client && npm start\"",
-    "install": "cd server && npm i && cd ../client && npm i",
-    "seed": "cd server && npm run seed",
-    "build": "cd client && npm run build"
+  "engines": {
+    "node": "20.x",
+    "npm": "10.1.0"
   },
   "eslintConfig": {
     "extends": "react-app"
