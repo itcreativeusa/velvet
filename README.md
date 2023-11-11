@@ -21,6 +21,11 @@ Velvet is an eCommerce platform specializing in clothing, where garments are org
 
 ## Installation
 
+On local machine run the following commands:
+"npm install" to install all dependencies
+"npm run seed" to seed the database
+"npm run develop" to start the server
+
 ## Technologies Used
 
 **Front-End:**
@@ -97,8 +102,10 @@ Your sensitive API key information is protected on the server, ensuring the secu
 ## Screenshots
 
 Screenshots located in `img/` folder
-![main page](img/Screenshot-1.png)
-![categories](img/Screenshot.png)
+![main page](img/Screenshot.png)
+![categories](img/Screenshot1.png)
+![product](img/Screenshot3.png)
+![login](img/Screenshot4.png)
 
 ## Credits
 
