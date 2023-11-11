@@ -23,12 +23,12 @@ function Nav(props) {
 
           <li className="li">
             <Link to="/orderHistory">
-              <button className="btn btn-primary">View Orders</button>
+              <button className="btn">View Orders</button>
             </Link>
           </li>
           <li className="li">
             <a href="/" onClick={() => Auth.logout()}>
-              <button className="btn btn-danger">Logout</button>
+              <button className="btn">Logout</button>
             </a>
           </li>
         </ul>
@@ -36,15 +36,15 @@ function Nav(props) {
     } else {
       return (
         <div>
-          <ul className="flex-row">
+          <ul className="flex-row navbar">
             <li>
               <Link to="/signup">
-                <button className="btn btn-success">SIGN UP</button>
+                <button className="btn">SIGN UP</button>
               </Link>
             </li>
             <li className="mx-1">
               <Link to="/login">
-                <button className="btn btn-primary">LOG IN</button>
+                <button className="btn">LOG IN</button>
               </Link>
             </li>
           </ul>

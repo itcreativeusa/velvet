@@ -30,7 +30,7 @@ function Login(props) {
   };
 
   return (
-    <div className="container mt-5">
+    <div className="container login">
       <div className="signupbox">
         <h2 className="formTitle">Log In</h2>
         <form onSubmit={handleFormSubmit} className="user-form">
@@ -64,7 +64,7 @@ function Login(props) {
             </div>
           ) : null}
           <div>
-            <button type="submit" className="btn btn-primary submit-btn">
+            <button type="submit" className="btn submit">
               Submit
             </button>
           </div>

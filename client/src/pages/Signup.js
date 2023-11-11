@@ -36,7 +36,7 @@ function Signup(props) {
   };
 
   return (
-    <div className="container mt-5">
+    <div className="container signup">
       <div className="signupbox">
         <h2 className="formTitle">Sign Up</h2>
         <form onSubmit={handleFormSubmit} className="user-form2">
@@ -85,7 +85,7 @@ function Signup(props) {
             />
           </div>
           <div>
-            <button type="submit" className="btn btn-primary submit-btn">
+            <button type="submit" className="btn submit">
               Submit
             </button>
           </div>
