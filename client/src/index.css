@@ -1,3 +1,4 @@
+/* Declare Variables */
 :root {
   --primary-color: #000;
   --primary-color-light: #767676;
@@ -10,24 +11,7 @@
   padding-right: 0;
   padding-left: 0;
 }
-
-.logo {
-  float: left;
-  margin-right: auto;
-  color: var(--primary-color);
-  font-weight: 500;
-  font-size: 2rem;
-}
-
-.logo :hover {
-  text-decoration: underline;
-}
-.name {
-  font-size: 1rem;
-  font-weight: 300;
-  color: var(--primary-color);
-}
-
+/* Base Styles */
 body {
   margin: 0;
   padding: 0;
@@ -37,13 +21,38 @@ body {
   color: var(--primary-color);
   text-transform: uppercase;
 }
-
 .container {
   text-align: center;
 }
 header {
   position: fixed;
   z-index: 1;
+}
+.navigation {
+  margin-top: 0;
+  position: relative;
+}
+/* Logo */
+.logo {
+  float: left;
+  margin-right: auto;
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 2rem;
+}
+.navbar {
+  margin: 0 auto;
+  font-weight: 300;
+  font-size: 1rem;
+  margin-right: 50px;
+}
+.logo :hover {
+  text-decoration: underline;
+}
+.name {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--primary-color);
 }
 h2 {
   font-size: 1.5rem;
@@ -56,13 +65,11 @@ h2 {
 .display-4 {
   font-size: 4rem;
 }
-
 .flex-row {
   display: flex;
   align-items: center;
   margin: 0 15px;
 }
-
 .btn-group .btn {
   display: flex;
   justify-content: space-between;
@@ -100,7 +107,7 @@ a:hover {
   justify-content: center;
   align-items: center;
 }
-
+/* Product Cards */
 .card {
   width: 30%;
   margin: 5px;
@@ -120,7 +127,11 @@ a:hover {
   font-weight: 500;
   text-decoration: underline;
 }
-
+.card-img-top {
+  height: 400px;
+  object-fit: cover;
+}
+/* Buttons */
 .btn {
   border: transparent;
   background: none;
@@ -128,66 +139,10 @@ a:hover {
   color: var(--primary-color);
   text-transform: uppercase;
 }
-
 .btn:hover {
   text-decoration: underline;
   background-color: transparent;
   color: var(--primary-color);
-}
-footer {
-  background-color: var(--primary-color);
-  color: white;
-  padding: 1rem;
-  text-align: center;
-  font-weight: 500;
-}
-.img-fluid {
-  width: 100%;
-  height: auto;
-} /*
-.img-detail {
-  width: 50%;
-  height: auto;
-  object-fit: contain;
-}*/
-.container-fluid {
-  text-align: center;
-}
-.detail {
-  position: relative;
-}
-.navigation {
-  margin-top: 0;
-  position: relative;
-}
-.navbar {
-  margin: 0 auto;
-  font-weight: 300;
-  font-size: 1rem;
-  margin-right: 50px;
-}
-
-.card-img-top {
-  height: 400px;
-  object-fit: cover;
-}
-.product-info {
-  margin: 0 auto;
-  width: 50%;
-  padding: 10%;
-}
-.product-image {
-  margin: 0 auto;
-  width: 50%;
-  padding: 5%;
-}
-.signupbox {
-  width: 40%;
-  margin: 0 auto;
-}
-.login,
-.signup {
-  padding: 5% 0 5% 0;
 }
 .submit {
   background-color: rgba(51, 51, 51, 0.05);
@@ -207,6 +162,8 @@ footer {
   -webkit-user-select: none;
   touch-action: manipulation;
 }
+
+/* Order History */
 .order-history {
   margin: 0 auto;
   width: 50%;
@@ -215,4 +172,42 @@ footer {
 .order-history-image {
   height: 200px;
   object-fit: cover;
+}
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  font-weight: 500;
+}
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+.container-fluid {
+  text-align: center;
+}
+.detail {
+  position: relative;
+}
+/* Product Detail */
+.product-info {
+  margin: 0 auto;
+  width: 50%;
+  padding: 10%;
+}
+.product-image {
+  margin: 0 auto;
+  width: 50%;
+  padding: 5%;
+}
+/* Sign Up, Login */
+.signupbox {
+  width: 40%;
+  margin: 0 auto;
+}
+.login,
+.signup {
+  padding: 5% 0 5% 0;
 }
