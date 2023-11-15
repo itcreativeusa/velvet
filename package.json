@@ -1,7 +1,7 @@
 {
   "name": "velvet",
   "version": "1.0.0",
-  "description": "Ecomerce web app for fashion",
+  "description": "Velvet is a full-stack e-commerce application built with React, Redux, Node.js, Express, and MongoDB.",
   "main": "server/server.js",
   "scripts": {
     "start": "node server --ignore client",
@@ -15,7 +15,7 @@
     "npm": "10.x"
   },
   "keywords": [],
-  "author": "The Drip Daddies",
+  "author": "Kateryna Stetsenko",
   "license": "ISC",
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
