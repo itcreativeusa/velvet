@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
 import { useQuery } from "@apollo/client";
 import { QUERY_USER } from "../utils/queries";
 
@@ -11,7 +10,6 @@ function OrderHistory() {
   if (data) {
     user = data.user;
   }
-
   return (
     <div className="container-fluid">
       <img

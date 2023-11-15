@@ -15,6 +15,7 @@ import { useStoreContext } from "../../utils/GlobalState";
 import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from "../../utils/actions";
 import "./style.css";
 
+// Stripe
 const stripePromise = loadStripe(
   "pk_test_51Nl1V0IUgxhWhAI19CoN4iBAWLw9jq0krwfCKLohPa734YUEzVM5oz15zqX2vRuq2tvOf4TvCg9V0TZycDeaRRpU004SHwoa2S"
 );
@@ -40,7 +41,6 @@ const Cart = () => {
         processPayment(paymentMethod);
       }
     };
-
     async function processPayment(paymentMethod) {
       const response = await fetch("/api/charge", {
         method: "POST",

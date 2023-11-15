@@ -9,9 +9,7 @@ import spinner from "../../assets/spinner.gif";
 
 function ProductList() {
   const [state, dispatch] = useStoreContext();
-
   const { currentCategory } = state;
-
   const { loading, data } = useQuery(QUERY_PRODUCTS);
 
   useEffect(() => {
@@ -48,8 +46,6 @@ function ProductList() {
       <h2 className="text-center">Our Products:</h2>
       {state.products.length ? (
         <div className="row justify-content-center">
-          {" "}
-          {/* Updated: justify-content-center */}
           {filterProducts().map((product) => (
             <ProductItem
               key={product._id}

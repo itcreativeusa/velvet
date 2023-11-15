@@ -1,6 +1,6 @@
 import React from "react";
-import "bootstrap-icons/font/bootstrap-icons.css";
 
+// Footer component & styling
 export default function Footer(props) {
   return (
     <footer>
