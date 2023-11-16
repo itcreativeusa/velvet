@@ -46,14 +46,17 @@ header {
   font-size: 1rem;
   margin-right: 50px;
 }
-.logo :hover {
+.logo:hover {
   text-decoration: underline;
+  color: #06716e;
 }
 .name {
   font-size: 1rem;
   font-weight: 300;
   color: var(--primary-color);
+  padding: auto;
 }
+
 h2 {
   font-size: 1.5rem;
   text-align: center;
@@ -65,10 +68,11 @@ h2 {
 .display-4 {
   font-size: 4rem;
 }
+
 .flex-row {
   display: flex;
   align-items: center;
-  margin: 0 15px;
+  margin: 0 35px;
 }
 .btn-group .btn {
   display: flex;
@@ -80,7 +84,14 @@ h2 {
 .btn-group .btn:hover {
   text-decoration: underline;
 }
-
+.btn-check:checked + .btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check) + .btn:active {
+  color: #fff;
+  background-color: #06716e;
+}
 .categoryBtn {
   color: var(--secondary-color);
 }
