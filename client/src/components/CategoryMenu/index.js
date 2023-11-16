@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useQuery } from "@apollo/client";
 import { useStoreContext } from "../../utils/GlobalState";
 import {
@@ -12,6 +12,7 @@ function CategoryMenu() {
   const [state, dispatch] = useStoreContext();
   const { categories } = state;
   const { loading, data: categoryData } = useQuery(QUERY_CATEGORIES);
+  const [collapsed, setCollapsed] = useState(true);
 
   useEffect(() => {
     if (categoryData) {
@@ -37,24 +38,51 @@ function CategoryMenu() {
       type: UPDATE_CURRENT_CATEGORY,
       currentCategory: id,
     });
+    setCollapsed(true);
+  };
+
+  const toggleCollapse = () => {
+    setCollapsed(!collapsed);
   };
 
   return (
     <div className="container my-4">
-      <h3>Choose a Category:</h3>
-      <div className="btn-group">
-        {categories.map((item) => (
+      <h3 className="text-center">Choose a Category:</h3>
+      <nav className="navbar navbar-expand-lg ">
+        <div className="container">
           <button
-            className="btn btn-secondary categoryBtn"
-            key={item._id}
-            onClick={() => {
-              handleClick(item._id);
-            }}
+            className="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded={!collapsed ? true : false}
+            aria-label="Toggle navigation"
+            onClick={toggleCollapse}
           >
-            {item.name}
+            <span className="navbar-toggler-icon"></span>
           </button>
-        ))}
-      </div>
+          <div
+            className={`collapse navbar-collapse ${collapsed ? "" : "show"}`}
+            id="navbarNav"
+          >
+            <ul className="navbar-nav mx-auto text-center">
+              {categories.map((item) => (
+                <li className="nav-item" key={item._id}>
+                  <button
+                    className="btn btn-secondary categoryBtn nav-link"
+                    onClick={() => {
+                      handleClick(item._id);
+                    }}
+                  >
+                    {item.name}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </nav>
     </div>
   );
 }

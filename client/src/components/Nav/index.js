@@ -15,14 +15,19 @@ function Nav(props) {
         <ul className="navbar">
           <li className="li">
             {user && (
-              <Link className="name" id="welcomeMessage" to="/">
+              <Link
+                class="nav-link nav-item"
+                className="name"
+                id="welcomeMessage"
+                to="/"
+              >
                 Welcome, {user.firstName} {user.lastName}
               </Link>
             )}
           </li>
 
           <li className="li">
-            <Link to="/orderHistory">
+            <Link class="nav-link" to="/orderHistory">
               <button className="btn">View Orders</button>
             </Link>
           </li>
@@ -37,13 +42,13 @@ function Nav(props) {
       return (
         <div>
           <ul className="flex-row navbar">
-            <li>
-              <Link to="/signup">
+            <li class="nav-item">
+              <Link class="nav-link" to="/signup">
                 <button className="btn">SIGN UP</button>
               </Link>
             </li>
             <li className="mx-1">
-              <Link to="/login">
+              <Link class="nav-link" to="/login">
                 <button className="btn">LOG IN</button>
               </Link>
             </li>
@@ -55,8 +60,8 @@ function Nav(props) {
 
   return (
     <header className="container-fluid navigation">
-      <div className="flex-row">
-        <Link className="logo" to="/">
+      <div className="flex-row navbar navbar-expand-lg">
+        <Link className="logo navbar-brand" to="/">
           Velvet
         </Link>
 
