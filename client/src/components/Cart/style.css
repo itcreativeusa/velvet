@@ -96,13 +96,3 @@
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 }
-
-/* Large Devices, Large Desktops */
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  /* Your styles for large devices go here */
-}
-
-/* Extra Large Devices, Extra Large Desktops */
-@media only screen and (min-width: 1200px) {
-  /* Your styles for extra large devices go here */
-}

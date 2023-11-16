@@ -402,7 +402,6 @@ footer {
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 575px) {
-  /* Your styles for extra small devices go here */
   .navbar {
     margin-right: 15px;
   }
@@ -410,23 +409,16 @@ footer {
 
 /* Small Devices, Tablets */
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-  /* Your styles for small devices go here */
   .navbar {
     margin-right: 15px;
   }
 }
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* Your styles for medium devices go here */
   .navbar {
     margin-right: 15px;
   }
   .categoryBtn {
     width: 48%;
   }
-}
-
-/* Large Devices, Large Desktops */
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  /* Your styles for large devices go here */
 }
