@@ -15,7 +15,6 @@ import { useStoreContext } from "../../utils/GlobalState";
 import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from "../../utils/actions";
 import "./style.css";
 
-// Stripe
 const stripePromise = loadStripe(
   "pk_test_51Nl1V0IUgxhWhAI19CoN4iBAWLw9jq0krwfCKLohPa734YUEzVM5oz15zqX2vRuq2tvOf4TvCg9V0TZycDeaRRpU004SHwoa2S"
 );
@@ -24,6 +23,7 @@ const Cart = () => {
   const [state, dispatch] = useStoreContext();
   const [getCheckout, { data }] = useLazyQuery(QUERY_CHECKOUT);
 
+  //checkout form
   const CheckoutForm = () => {
     const stripe = useStripe();
     const elements = useElements();
@@ -40,7 +40,10 @@ const Cart = () => {
       } else {
         processPayment(paymentMethod);
       }
+
+      console.log("button clicked");
     };
+
     async function processPayment(paymentMethod) {
       const response = await fetch("/api/charge", {
         method: "POST",
@@ -113,12 +116,8 @@ const Cart = () => {
   if (!state.cartOpen) {
     return (
       <div className="cart-closed" onClick={toggleCart}>
-        <span role="img" aria-label="cart">
-          <img
-            className="cartLogo"
-            src="/icons8-cart-50.png"
-            alt="cart image"
-          />
+        <span role="img" aria-label="trash">
+          <img className="cartLogo" src="/cart.ico" alt="cart image" />
         </span>
       </div>
     );
@@ -126,7 +125,7 @@ const Cart = () => {
 
   return (
     <Elements stripe={stripePromise}>
-      <div className="cart container">
+      <div className="cart">
         <div className="close" onClick={toggleCart}>
           [close]
         </div>
@@ -142,7 +141,7 @@ const Cart = () => {
 
               {Auth.loggedIn() ? (
                 <div>
-                  <button className="btn btn-primary" onClick={submitCheckout}>
+                  <button className="cartBtns" onClick={submitCheckout}>
                     Checkout
                   </button>
                   <CheckoutForm />
