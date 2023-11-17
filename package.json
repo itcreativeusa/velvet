@@ -1,21 +1,20 @@
 {
-  "name": "velvet",
+  "name": "fashion-fusion",
   "version": "1.0.0",
-  "description": "Velvet is a full-stack e-commerce application built with React, Redux, Node.js, Express, and MongoDB.",
+  "description": "Ecomerce web app for fashion",
   "main": "server/server.js",
   "scripts": {
     "start": "node server --ignore client",
     "develop": "concurrently \"cd server && npm run start\" \"cd client && npm start\"",
-    "install": "cd server && npm install && cd ../client && npm install",
+    "install": "cd server && npm i && cd ../client && npm i",
     "seed": "cd server && npm run seed",
     "build": "cd client && npm run build"
   },
   "engines": {
-    "node": "20.x",
-    "npm": "10.x"
+    "node": "16.x"
   },
   "keywords": [],
-  "author": "Kateryna Stetsenko",
+  "author": "The Drip Daddies",
   "license": "ISC",
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
@@ -26,7 +25,6 @@
     "@stripe/react-stripe-js": "^2.1.2",
     "bcrypt": "^5.1.1",
     "bootstrap": "^5.3.2",
-    "bootstrap-icons": "^1.11.1",
     "express": "^4.18.2"
   }
 }
