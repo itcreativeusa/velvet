@@ -39,7 +39,7 @@
 
 .cart-closed {
   position: fixed;
-  top: 0;
+  top: 1%;
   right: 1%;
   cursor: pointer;
   background-color: transparent;
@@ -54,15 +54,33 @@
   transform: rotate(8deg);
 }
 
-.cart img {
+.cart-item-image {
   width: 70px;
   margin-right: 1rem;
+  padding: 5px;
 }
 
 .cart input {
   width: 50px;
   padding: 0;
-  margin: 0 0.5rem 1rem 0;
+}
+
+.cart-footer,
+.cart-message {
+  padding: 15px;
+}
+.cartBtns {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  text-transform: uppercase;
+}
+.cart-qty,
+.trash-icon {
+  padding: 10px;
+}
+.cart-item-name {
+  font-weight: 500;
 }
 
 @media screen and (max-width: 768px) {

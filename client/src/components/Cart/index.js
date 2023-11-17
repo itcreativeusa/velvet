@@ -65,7 +65,11 @@ const Cart = () => {
       console.log("Payment successful:", data);
     }
 
-    return <form onSubmit={handleSubmit}>Thank you for shopping with us!</form>;
+    return (
+      <div className="cart-message" onSubmit={handleSubmit}>
+        Cart set, time for the grand reveal! &#x1F5A4;
+      </div>
+    );
   };
 
   useEffect(() => {
@@ -117,7 +121,7 @@ const Cart = () => {
     return (
       <div className="cart-closed" onClick={toggleCart}>
         <span role="img" aria-label="trash">
-          <img className="cartLogo" src="/cart.ico" alt="cart image" />
+          <img className="cartLogo" src="/cart.png" alt="cart image" />
         </span>
       </div>
     );
@@ -140,7 +144,7 @@ const Cart = () => {
               <strong>Total: ${calculateTotal()} </strong>
 
               {Auth.loggedIn() ? (
-                <div>
+                <div className="cart-footer">
                   <button className="cartBtns" onClick={submitCheckout}>
                     Checkout
                   </button>
