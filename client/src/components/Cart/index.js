@@ -135,7 +135,7 @@ const Cart = () => {
         </div>
         <h2>Shopping Cart</h2>
         {state.cart.length ? (
-          <div>
+          <div className="cart-items-open-cart">
             {state.cart.map((item) => (
               <CartItem key={item._id} item={item} />
             ))}
